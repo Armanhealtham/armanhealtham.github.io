@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arman Avetisyan | Персональный тренер, диетолог и реабилитолог</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Дополнительная настройка под вертикальные фото До/После */
+        .carousel-item img {
+            max-height: 620px;
+            object-fit: contain;
+            background-color: #141414;
+            margin: 0 auto;
+        }
+        .slide-counter {
+            text-align: center;
+            margin-top: 15px;
+            font-weight: 700;
+            color: #ff5722;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+    <!-- НАВИГАЦИЯ -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">AVETISYAN</div>
+            <nav class="nav-menu">
+                <a href="#about" class="nav-link" data-ru="Обо мне" data-hy="Իմ մասին">Обо мне</a>
+                <a href="#services" class="nav-link" data-ru="Услуги" data-hy="Ծառայություններ">Услуги</a>
+                <a href="#results" class="nav-link" data-ru="Результаты" data-hy="Արդյունքներ">Результаты</a>
+                <a href="#reviews" class="nav-link" data-ru="Отзывы" data-hy="Կարծիքներ">Отзывы</a>
+            </nav>
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="switchLang('ru', event)">RU</button>
+                <span class="lang-divider">|</span>
+                <button class="lang-btn" onclick="switchLang('hy', event)">ՀԱՅ</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ПЕРВЫЙ ЭКРАН -->
+    <section class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge" data-ru="🎓 ХГАФК 2011 • 15+ лет практики" data-hy="🎓 ԽՖԿՊԱ 2011 • 15+ տարվա փորձ">🎓 ХГАФК 2011 • 15+ лет практики</div>
+                <h1 id="hero-title">ЗДОРОВОЕ И СИЛЬНОЕ ТЕЛО БЕЗ ЖЕСТКИХ ДИЕТ</h1>
+                <p id="hero-subtitle">Научный подход к тренировкам и питанию от выпускника Харьковской академии физической культуры. Худейте комфортно, сохраняя любимые продукты, и укрепляйте здоровье спины и суставов.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary" data-ru="Выбрать формат" data-hy="Ընտրել տարբերակը">Выбрать формат</a>
+                    <a href="https://t.me/твой_логин" target="_blank" class="btn btn-secondary" data-ru="Консультация" data-hy="Խորհրդատվություն">Консультация</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="img/me1.jpg" alt="Арман Аветисян" class="hero-img">
+                <div class="rating-badge">
+                    <span class="rating-stars">⭐⭐⭐⭐⭐</span>
+                    <span class="rating-text" data-ru="5.0 на Профи.ру (85+ отзывов)" data-hy="5.0 Profi.ru-ում (85+ կարծիք)">5.0 на Профи.ру (85+ отзывов)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ОБО МНЕ -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title" data-ru="ОБ ЭКСПЕРТЕ" data-hy="ՄԱՍՆԱԳԵՏԻ ՄԱՍԻՆ">ОБ ЭКСПЕРТЕ</h2>
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <img src="img/me2.jpg" alt="Арман Аветисян в зале" class="about-img">
+                </div>
+                <div class="about-info">
+                    <h3 data-ru="Арман Аветисян — ваш результат на основе науки" data-hy="Արման Ավետիսյան — ձեր արդյունքը գիտական հիմքով">Арман Аветисян — ваш результат на основе науки</h3>
+                    <p data-ru="Я не верю в экстремальные марафоны и голодовки, которые разрушают здоровье. Мой подход — это гибкая и научно обоснованная система, опирающаяся на высшее профильное образование (Харьковская государственная академия физической культуры, 2011 г.) и более чем 15-летний практический опыт." data-hy="Ես չեմ հավատում էքստրեմալ մարաթոններին և սովամահությանը, որոնք քայքայում են առողջությունը: Իմ մոտեցումը ճկուն և գիտականորեն հիմնավորված համակարգ է՝ հիմնված բարձրագույն մասնագիտական կրթության (Խարկովի ֆիզիկական կուլտուրայի պետական ակադեմիա, 2011թ.) և ավելի քան 15 տարվա փորձի վրա:">Я не верю в экстремальные марафоны и голодовки, которые разрушают здоровье. Мой подход — это гибкая и научно обоснованная система, опирающаяся на высшее профильное образование (Харьковская государственная академия физической культуры, 2011 г.) и более чем 15-летний практический опыт.</p>
+                    
+                    <div class="specialties-list">
+                        <div class="spec-card">
+                            <h4 data-ru="💪 Спорт" data-hy="💪 Սպորտ">💪 Спорт</h4>
+                            <p data-ru="Эффективные тренировки для зала и дома с индивидуальным подбором нагрузок и биомеханики." data-hy="Արդյունավետ մարզումներ մարզասրահի և տան համար՝ ծանրաբեռնվածության անհատական ընտրությամբ:">Эффективные тренировки для зала и дома с индивидуальным подбором нагрузок и биомеханики.</p>
+                        </div>
+                        <div class="spec-card">
+                            <h4 data-ru="🥗 Диетология" data-hy="🥗 Դիետոլոգիա">🥗 Диетология</h4>
+                            <p data-ru="Гибкое питание и управление энергобалансом без срывов, голода и запрета на любимую еду." data-hy="Ճկուն սննդակարգ և էներգոբալանսի կառավարում՝ առանց սովի և սիրելի ուտելիքների արգելքի:">Гибкое питание и управление энергобалансом без срывов, голода и запрета на любимую еду.</p>
+                        </div>
+                        <div class="spec-card">
+                            <h4 data-ru="🩺 Реабилитация" data-hy="🩺 Վերականգնում">🩺 Реабилитация</h4>
+                            <p data-ru="Безопасный тренинг при грыжах, протрузиях и болях в суставах. Укрепление мышечного корсета." data-hy="Անվտանգ մարզումներ ճողվածքների, պրոտրուզիաների և հոդացավերի դեպքում: Մկանային կորսետի ամրապնդում:">Безопасный тренинг при грыжах, протрузиях и болях в суставах. Укрепление мышечного корсета.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФОРМАТЫ РАБОТЫ (ПРОДУКТЫ) -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title" data-ru="ФОРМАТЫ РАБОТЫ" data-hy="ԱՇԽԱՏԱՆՔԻ ՏԱՐԲԵՐԱԿՆԵՐԸ">ФОРМАТЫ РАБОТЫ</h2>
+            <div class="services-grid">
+                
+                <!-- Продукт 1 -->
+                <div class="service-card">
+                    <img src="img/me3.jpg" alt="Полное сопровождение" class="service-card-img">
+                    <div class="service-card-content">
+                        <h3 data-ru="Полное сопровождение с тренировками и питанием" data-hy="Ամբողջական ուղեկցում (մարզումներ և սնունդ)">Полное сопровождение с тренировками и питанием</h3>
+                        <p data-ru="Индивидуальная программа тренировок, гибкий рацион, реабилитационный контроль, постоянная связь и корректировки." data-hy="Մարզումների անհատական ծրագիր, ճկուն սննդակարգ, վերականգնողական վերահսկողություն, մշտական կապ և ուղղումներ:">Индивидуальная программа тренировок, гибкий рацион, реабилитационный контроль, постоянная связь и корректировки.</p>
+                        <div class="price" data-ru="12 000 ₽ / мес" data-hy="40 000 ֏ / ամիս">12 000 ₽ / мес</div>
+                        <a href="#" class="btn btn-primary buy-btn" data-ru="Купить / Рассрочка" data-hy="Գնել" data-ru-link="ссылка_на_продамус_1" data-hy-link="ссылка_на_впос_1">Купить / Рассрочка</a>
+                    </div>
+                </div>
+
+                <!-- Продукт 2 -->
+                <div class="service-card">
+                    <img src="img/me4.jpg" alt="Сопровождение по питанию" class="service-card-img">
+                    <div class="service-card-content">
+                        <h3 data-ru="Сопровождение по питанию" data-hy="Սննդակարգի ուղեկցում">Сопровождение по питанию</h3>
+                        <p data-ru="Разбор рациона, расчет КБЖУ, комфортное меню из привычных продуктов без срывов. Ежедневный контроль 1-на-1 в течение месяца." data-hy="Օրաբաժնի վերլուծություն, ԿԲԺՈՒ հաշվարկ, հարմարավետ մենյու առանց սթրեսի: Ամենօրյա վերահսկողություն 1 ամսվա ընթացքում:">Разбор рациона, расчет КБЖУ, комфортное меню из привычных продуктов без срывов. Ежедневный контроль 1-на-1 в течение месяца.</p>
+                        <div class="price" data-ru="10 000 ₽ / мес" data-hy="30 000 ֏ / ամիս">10 000 ₽ / мес</div>
+                        <a href="#" class="btn btn-primary buy-btn" data-ru="Оформить" data-hy="Գնել" data-ru-link="ссылка_на_продамус_2" data-hy-link="ссылка_на_впос_2">Оформить</a>
+                    </div>
+                </div>
+
+                <!-- Продукт 3 -->
+                <div class="service-card">
+                    <img src="img/me4.jpg" alt="Индивидуальный план питания" class="service-card-img">
+                    <div class="service-card-content">
+                        <h3 data-ru="Индивидуальный план питания на месяц" data-hy="Անհատական սննդակարգ 1 ամսվա համար">Индивидуальный план питания на месяц</h3>
+                        <p data-ru="Персональное меню на месяц под ваши цели и вкусовые предпочтения с точным расчетом КБЖУ и таблицей замен продуктов." data-hy="Մեկ ամսվա անհատական մենյու՝ հարմարեցված ձեր նպատակներին ու ճաշակին, ԿԲԺՈՒ հաշվարկով և մթերքների փոխարինման սխեմայով:">Персональное меню на месяц под ваши цели и вкусовые предпочтения с точным расчетом КБЖУ и таблицей замен продуктов.</p>
+                        <div class="price" data-ru="6 000 ₽" data-hy="20 000 ֏">6 000 ₽</div>
+                        <a href="#" class="btn btn-primary buy-btn" data-ru="Получить план" data-hy="Ստանալ ծրագիրը" data-ru-link="ссылка_на_продамус_3" data-hy-link="ссылка_на_впос_3">Получить план</a>
+                    </div>
+                </div>
+
+                <!-- Продукт 4 -->
+                <div class="service-card">
+                    <img src="img/me3.jpg" alt="Курс Энергия, Метаболизм и Здоровье тела" class="service-card-img">
+                    <div class="service-card-content">
+                        <h3 data-ru="Курс «Энергия, Метаболизм и Здоровье тела»" data-hy="«Էներգիա, Մետաբոլիզմ և Մարմնի Առողջություն» դասընթաց">Курс «Энергия, Метаболизм и Здоровье тела»</h3>
+                        <p data-ru="Обучающий видеокурс: как работает ваш организм, как управлять энергобалансом, повысить уровень энергии и сохранять форму без диет." data-hy="Ուսուցողական տեսադասընթաց. ինչպես է աշխատում օրգանիզմը, ինչպես կառավարել էներգոբալանսը և պահպանել առողջ մարմին առանց խիստ դիետաների:">Обучающий видеокурс: как работает ваш организм, как управлять энергобалансом, повысить уровень энергии и сохранять форму без диет.</p>
+                        <div class="price" data-ru="2 900 ₽" data-hy="8 900 ֏">2 900 ₽</div>
+                        <a href="#" class="btn btn-primary buy-btn" data-ru="Получить доступ" data-hy="Ստանալ հասանելիություն" data-ru-link="ссылка_на_продамус_4" data-hy-link="ссылка_на_впос_4">Получить доступ</a>
+                    </div>
+                </div>
+
+                <!-- Продукт 5 -->
+                <div class="service-card">
+                    <img src="img/me5.jpg" alt="Онлайн-тренировка по видеосвязи" class="service-card-img">
+                    <div class="service-card-content">
+                        <h3 data-ru="Онлайн-тренировка по видеосвязи" data-hy="Օնլայն մարզում տեսակապով">Онлайн-тренировка по видеосвязи</h3>
+                        <p data-ru="Персональное занятие со мной в прямом эфире. Постановка техники упражнений, контроль каждого движения и безопасная нагрузка." data-hy="Անհատական մարզում ինձ հետ ուղիղ եթերով: Վարժությունների տեխնիկայի տեղադրում, շարժումների վերահսկում և անվտանգ ծանրաբեռնվածություն:">Персональное занятие со мной в прямом эфире. Постановка техники упражнений, контроль каждого движения и безопасная нагрузка.</p>
+                        <div class="price" data-ru="2 500 ₽ / тренировка" data-hy="10 000 ֏ / մարզում">2 500 ₽ / тренировка</div>
+                        <a href="#" class="btn btn-primary buy-btn" data-ru="Записаться" data-hy="Ամրագրել" data-ru-link="ссылка_на_продамус_5" data-hy-link="ссылка_на_впос_5">Записаться</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- РЕЗУЛЬТАТЫ ДО/ПОСЛЕ (10 ФОТОГРАФИЙ) -->
+    <section id="results" class="results-section">
+        <div class="container">
+            <h2 class="section-title" data-ru="РЕЗУЛЬТАТЫ ПОДОПЕЧНЫХ" data-hy="ՍԱՆԵՐԻ ԱՐԴՅՈՒՆՔՆԵՐԸ">РЕЗУЛЬТАТЫ ПОДОПЕЧНЫХ</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active"><img src="img/res1.jpg" alt="Результат 1"></div>
+                    <div class="carousel-item"><img src="img/res2.jpg" alt="Результат 2"></div>
+                    <div class="carousel-item"><img src="img/res3.jpg" alt="Результат 3"></div>
+                    <div class="carousel-item"><img src="img/res4.jpg" alt="Результат 4"></div>
+                    <div class="carousel-item"><img src="img/res5.jpg" alt="Результат 5"></div>
+                    <div class="carousel-item"><img src="img/res6.jpg" alt="Результат 6"></div>
+                    <div class="carousel-item"><img src="img/res7.jpg" alt="Результат 7"></div>
+                    <div class="carousel-item"><img src="img/res8.jpg" alt="Результат 8"></div>
+                    <div class="carousel-item"><img src="img/res9.jpg" alt="Результат 9"></div>
+                    <div class="carousel-item"><img src="img/res10.jpg" alt="Результат 10"></div>
+                </div>
+                <button class="carousel-control prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="carousel-control next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <div id="slide-counter" class="slide-counter">1 / 10</div>
+        </div>
+    </section>
+
+    <!-- ОТЗЫВЫ С ПРОФИ.РУ (4 ОТЗЫВА) -->
+    <section id="reviews" class="reviews-section">
+        <div class="container">
+            <h2 class="section-title" data-ru="ЧТО ГОВОРЯТ КЛИЕНТЫ" data-hy="ԻՆՉ ԵՆ ԱՍՈՒՄ ՀԱՃԱԽՈՐԴՆԵՐԸ">ЧТО ГОВОРЯТ КЛИЕНТЫ</h2>
+            <div class="rating-profi">
+                <span class="profi-rating-num">5.0</span>
+                <span class="profi-rating-stars">⭐⭐⭐⭐⭐</span>
+                <p data-ru="на основе 85+ подтвержденных отзывов на Профи.ру" data-hy="Հիմնված է Profi.ru-ում 85+ հաստատված կարծիքների վրա">на основе 85+ подтвержденных отзывов на Профи.ру</p>
+                <a href="https://profi.ru/profile/AvetisyanAA8" target="_blank" class="btn btn-secondary review-link-btn" data-ru="Читать все 85 отзывов на Profi.ru" data-hy="Կարդալ բոլոր 85 կարծիքները Profi.ru-ում">Читать все 85 отзывов на Profi.ru</a>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p class="review-text" data-ru="«Огромная благодарность Арману за его профессионализм и чуткость! За 3 месяца ведения я не только скинул лишние 12 кг, но и забыл про боли в пояснице, которые мучили годами из-за сидячей работы. Сразу видна серьезная база реабилитолога!»" data-hy="«Հսկայական շնորհակալություն Արմանին իր պրոֆեսիոնալիզմի և ուշադրության համար: 3 ամսվա ընթացքում ոչ միայն նիհարեցի 12 կգ-ով, այլև մոռացա գոտկատեղի ցավերի մասին, որոնք տանջում էին տարիներ շարունակ: Անմիջապես երևում է ռեաբիլիտոլոգի լուրջ բազան:»">«Огромная благодарность Арману за его профессионализм и чуткость! За 3 месяца ведения я не только скинул лишние 12 кг, но и забыл про боли в пояснице, которые мучили годами из-за сидячей работы. Сразу видна серьезная база реабилитолога!»</p>
+                    <span class="review-author" data-ru="— Александр" data-hy="— Ալեքսանդր">— Александр</span>
+                </div>
+                <div class="review-card">
+                    <p class="review-text" data-ru="«Лучший специалист, к которому я обращалась! Арман научил нормально и вкусно питаться без жестких диет и запретов: ем любимые блюда, не голодаю, а вес уходит стабильно и без срывов. Тренировки адаптировал под мои проблемные колени.»" data-hy="«Լավագույն մասնագետը, ում դիմել եմ: Արմանը սովորեցրեց նորմալ և համեղ սնվել առանց խիստ դիետաների ու արգելքների. ուտում եմ սիրելի ուտեստները, չեմ սովածանում, իսկ քաշը կայուն նվազում է: Մարզումներն էլ հարմարեցրեց խնդրահարույց ծնկներիս:»">«Лучший специалист, к которому я обращалась! Арман научил нормально и вкусно питаться без жестких диет и запретов: ем любимые блюда, не голодаю, а вес уходит стабильно и без срывов. Тренировки адаптировал под мои проблемные колени.»</p>
+                    <span class="review-author" data-ru="— Мариам" data-hy="— Մարիամ">— Мариам</span>
+                </div>
+                <div class="review-card">
+                    <p class="review-text" data-ru="«Занимаемся с Арманом онлайн уже полгода. Итог — минус 22 кг, отличное самочувствие и куча энергии! Всегда на связи, подробно разбирает каждый вопрос по питанию и ставит идеальную технику даже через экран телефона.»" data-hy="«Արդեն կես տարի է՝ օնլայն մարզվում ենք Արմանի հետ: Արդյունքը՝ մինուս 22 կգ, հիանալի ինքնազգացողություն և շատ էներգիա: Միշտ կապի մեջ է, մանրամասն բացատրում է սննդի հետ կապված ամեն հարց և իդեալական տեխնիկա է դնում նույնիսկ հեռախոսի էկրանով:»">«Занимаемся с Арманом онлайн уже полгода. Итог — минус 22 кг, отличное самочувствие и куча энергии! Всегда на связи, подробно разбирает каждый вопрос по питанию и ставит идеальную технику даже через экран телефона.»</p>
+                    <span class="review-author" data-ru="— Дмитрий" data-hy="— Դմիտրի">— Дмитрий</span>
+                </div>
+                <div class="review-card">
+                    <p class="review-text" data-ru="«После родов и сильного стресса никак не могла прийти в форму, пробовала разные диеты — вес только возвращался. С Арманом перестроили рацион без отказа от сладкого и укрепили спину. Уже минус 14 кг в спокойном, комфортном темпе!»" data-hy="«Ծննդաբերությունից և ուժեղ սթրեսից հետո չէի կարողանում վերականգնել կազմվածքս, տարբեր դիետաներ էի փորձում, բայց քաշը վերադառնում էր: Արմանի հետ կարգավորեցինք սննդակարգն առանց քաղցրից հրաժարվելու և ամրացրինք մեջքս: Արդեն մինուս 14 կգ՝ հանգիստ ու հարմարավետ տեմպով:»">«После родов и сильного стресса никак не могла прийти в форму, пробовала разные диеты — вес только возвращался. С Арманом перестроили рацион без отказа от сладкого и укрепили спину. Уже минус 14 кг в спокойном, комфортном темпе!»</p>
+                    <span class="review-author" data-ru="— Елена" data-hy="— Ելենա">— Елена</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФУТЕР -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>AVETISYAN</h3>
+                <p data-ru="Дипломированный специалист: Спорт • Диетология • Физическая реабилитация" data-hy="Դիպլոմավորված մասնագետ. Սպորտ • Դիետոլոգիա • Ֆիզիկական վերականգնում">Дипломированный специалист: Спорт • Диетология • Физическая реабилитация</p>
+                <p class="copyright" data-ru="© 2026 ИП Аветисян Арман. Все права защищены." data-hy="© 2026 ԱՁ Արման Ավետիսյան: Բոլոր իրավունքները պաշտպանված են:">© 2026 ИП Аветисян Арман. Все права защищены.</p>
+            </div>
+            <div class="footer-links">
+                <a href="politics.html" class="footer-link" target="_blank" data-ru="Политика конфиденциальности" data-hy="Գաղտնիության քաղաքականություն">Политика конфиденциальности</a>
+                <a href="offer.html" class="footer-link" target="_blank" data-ru="Публичная оферта" data-hy="Հանրային օֆերտա">Публичная оферта</a>
+                <div class="pay-icons">
+                    <span>💳 Visa</span>
+                    <span>💳 Mastercard</span>
+                    <span>💳 ArCa</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- СКРИПТ ПЕРЕКЛЮЧЕНИЯ ЯЗЫКОВ И КАРУСЕЛИ -->
+    <script>
+        const langData = {
+            ru: {
+                title: "ЗДОРОВОЕ И СИЛЬНОЕ ТЕЛО БЕЗ ЖЕСТКИХ ДИЕТ",
+                subtitle: "Научный подход к тренировкам и питанию от выпускника Харьковской академии физической культуры. Худейте комфортно, сохраняя любимые продукты, и укрепляйте здоровье спины и суставов."
+            },
+            hy: {
+                title: "ԱՌՈՂՋ ԵՎ ՈՒԺԵՂ ՄԱՐՄԻՆ՝ ԱՌԱՆՑ ԽԻՍՏ ԴԻԵՏԱՆԵՐԻ",
+                subtitle: "Մարզումների և սննդի գիտական մոտեցում ԽՖԿՊԱ շրջանավարտից (2011թ.): Նիհարե՛ք հարմարավետ, առանց սիրելի ուտելիքներից հրաժարվելու, և ամրապնդե՛ք ձեր մեջքն ու հոդերը:"
+            }
+        };
+
+        function switchLang(lang, evt) {
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            if (evt && evt.target) {
+                evt.target.classList.add('active');
+            }
+
+            document.getElementById('hero-title').innerText = langData[lang].title;
+            document.getElementById('hero-subtitle').innerText = langData[lang].subtitle;
+
+            document.querySelectorAll('[data-ru]').forEach(el => {
+                el.innerText = el.getAttribute(`data-${lang}`);
+            });
+
+            document.querySelectorAll('.buy-btn').forEach(btn => {
+                const link = btn.getAttribute(`data-${lang}-link`);
+                btn.setAttribute('href', link);
+            });
+        }
+
+        // КАРУСЕЛЬ НА 10 ФОТО
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        const counter = document.getElementById('slide-counter');
+        
+        function moveSlide(direction) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+            if (counter) {
+                counter.innerText = (currentSlide + 1) + ' / ' + slides.length;
+            }
+        }
+    </script>
+</body>
+</html>
