@@ -782,4 +782,43 @@ body.dark-theme {
     .footer-links {
         align-items: center;
     }
+/* НОВЫЙ БЛОК: ИКОНКИ В ШАПКЕ */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.social-icons a {
+    color: var(--text-gray);
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons a:hover {
+    color: var(--accent-orange);
+}
+
+.social-icons svg {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+}
+
+@media (max-width: 991px) {
+    .header-actions {
+        gap: 12px;
+    }
+    .social-icons svg {
+        width: 18px;
+        height: 18px;
+    }
 }
